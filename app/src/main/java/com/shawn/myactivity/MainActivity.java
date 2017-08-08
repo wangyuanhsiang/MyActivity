@@ -2,7 +2,12 @@ package com.shawn.myactivity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
+import android.widget.TextView;
+import android.widget.Toast;
+
+//import static com.shawn.myactivity.R.id.textView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,4 +19,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
+
+    public void topClick(View v){
+        Toast.makeText(this, "Top button clicked", Toast.LENGTH_SHORT).show();
+
+    }
+
+
+    public void bottomClick (View v){
+        Toast.makeText(this, "Bottom button clicked", Toast.LENGTH_SHORT).show();
+
+    }
+
 }
