@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+//    private TextView text = (TextView)findViewById(R.id.outputText);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,13 +24,15 @@ public class MainActivity extends AppCompatActivity {
 
     public void topClick(View v){
         Toast.makeText(this, "Top button clicked", Toast.LENGTH_SHORT).show();
-
+        TextView text = (TextView)findViewById(R.id.outputText);
+        text.setText("This is the top button");
     }
 
 
     public void bottomClick (View v){
         Toast.makeText(this, "Bottom button clicked", Toast.LENGTH_SHORT).show();
-
+        TextView text = (TextView)findViewById(R.id.outputText);
+        text.setText("This is the bottom button");
     }
 
 }
